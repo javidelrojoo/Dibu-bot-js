@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node deply-commands.js",
-    "start": "node index.js"
+    "build": "deply-commands.js"
   },
   "keywords": [],
   "author": "",
