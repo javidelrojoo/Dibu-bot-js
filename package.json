@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "node deploy-commands.js",
-    "start": "node index.js"
+    "start": "node deploy-commands.js && node index.js"
   },
   "keywords": [],
   "author": "",
