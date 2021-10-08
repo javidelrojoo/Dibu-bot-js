@@ -1,2 +1,1 @@
-worker : deploy-commands.js
-worker : node index.js
+worker : deploy-commands.js & node index.js & wait -n
