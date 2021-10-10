@@ -8,8 +8,7 @@ async function getValues(URL) {
 	const $ = cheerio.load(data);
 	const compra = $($('.value')[0]).text();
 	const venta = $($('.value')[1]).text();
-	const act = $($('#span')).text();
-	return [compra, venta, act];
+	return [compra, venta];
 }
 
 module.exports = {
@@ -19,19 +18,16 @@ module.exports = {
 	async execute(interaction) {
 		const URL = 'https://dolarhoy.com/cotizaciondolarblue';
 		console.log(await getValues(URL));
-		const [compra, venta, act] = await getValues(URL);
+		const [compra, venta] = await getValues(URL);
 
 		const exampleEmbed = new MessageEmbed()
 			.setColor('#0099ff')
-			.setTitle('Precio Dolar')
+			.setTitle('Precio dolar')
 			.setURL(URL)
 			.addFields(
 				{ name: 'Compra', value: compra },
 				{ name: 'Venta', value: venta },
-			)
-			.setFooter(`Última actualización: ${act}`);
-
-		// await interaction.reply(`Compra: ${compra}\nVenta: ${venta}`);
+			);
 		await interaction.reply({ embeds: [exampleEmbed] });
 	},
 };
