@@ -23,7 +23,7 @@ module.exports = {
 				.addChoice('mate pura', 'mate pura')
 				.addChoice('mate aplicada', 'mate aplicada')
 				.addChoice('oceano', 'oceano')
-				.addChoice('quimica', 'https://media.discordapp.net/attachments/750169342666211408/818513992531574814/planQuimica.png')
+				.addChoice('quimica', 'quimica')
 				.addChoice('lcd', 'lcd')),
 	async execute(interaction) {
 		const carrera = interaction.options.getString('carrera');
