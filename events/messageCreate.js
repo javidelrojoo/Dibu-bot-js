@@ -5,11 +5,8 @@ module.exports = {
 		if (message.author.id == 470723884166021120) {
 			message.react('<:felis:887018949206753321>');
 		}
-<<<<<<< HEAD
-=======
 		if (toLowerCase(message.content) == 'grande martin') {
 			message.reply('grande martin');
 		}
->>>>>>> df0f3db (grande martin)
 	},
 };
