@@ -59,5 +59,8 @@ module.exports = {
 		if (msg.includes('cuervo')) {
 			message.react('<:rojo:855269121561329704>');
 		}
+		if (msg.includes('jose') || msg.includes('josé')) {
+			message.delete();
+		}
 	},
 };
