@@ -5,9 +5,6 @@ module.exports = {
 			return
 		}
 		const msg = message.content.toLowerCase();
-		if (message.author.id == 470723884166021120) {
-			message.react('<:felis:887018949206753321>');
-		}
 		if (msg == 'grande martin') {
 			message.reply('grande martin');
 		}
@@ -58,9 +55,6 @@ module.exports = {
 		}
 		if (msg.includes('cuervo')) {
 			message.react('<:rojo:855269121561329704>');
-		}
-		if (msg.includes('jose') || msg.includes('josé')) {
-			message.delete();
 		}
 	},
 };
